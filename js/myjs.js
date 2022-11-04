@@ -54,10 +54,10 @@ function game(id){
         title.innerHTML="O";
         play();
     }
-    // else if( turn == "o"){
-    //     element.innerHTML="O";
-    //     play();
-    // }
+    else if( turn == "o"){
+        element.innerHTML="O";
+        play();
+    }
     win();
 }
 
