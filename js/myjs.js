@@ -1,13 +1,17 @@
 let turn ="x";
 let title = document.querySelector(".title");
 let squ = [] ;
+let a =1;
 function end (num1,num2,num3){
-    title.innerHTML = `${squ[num1]} winer`;
-    document.getElementById(`box`+num1).style.backgroundColor = "rgb(42, 183, 185)";
-    document.getElementById(`box`+num2).style.backgroundColor = "rgb(42, 183, 185)";
-    document.getElementById(`box`+num3).style.backgroundColor = "rgb(42, 183, 185)";
-    setInterval(function(){title.innerHTML +=`.`},1000)
-    setTimeout(function(){location.reload()},3000)
+    if(a==1){
+        title.innerHTML = `${squ[num1]} winer`;
+        document.getElementById(`box`+num1).style.backgroundColor = "rgb(42, 183, 185)";
+        document.getElementById(`box`+num2).style.backgroundColor = "rgb(42, 183, 185)";
+        document.getElementById(`box`+num3).style.backgroundColor = "rgb(42, 183, 185)";
+        setInterval(function(){title.innerHTML +=`.`},1000)
+        setTimeout(function(){location.reload()},3000)
+        a=2;
+    }
 }
 function win (){
     for(let i = 1; i<10 ; i++){
